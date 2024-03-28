@@ -121,7 +121,7 @@ class Service:
 
         cursor.execute(
             '''
-            SELECT topic, COUNT(*) AS number
+            SELECT difficulty, COUNT(*) AS number
             FROM problems
             GROUP BY difficulty
             ORDER BY number DESC;
